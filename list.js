@@ -46,14 +46,16 @@ function toPHP(fromPHP){
 		}
 		var NAME = obj[i].FNAME+' '+obj[i].LNAME;
 		if(obj[i].RV == 1){
-			obj[i].NIGHTS = 'RV';
+			NIGHTS = 'RV';
+		}else{
+			NIGHTS = obj[i].NIGHTS;
 		}
 
 		document.getElementById('scroll').innerHTML += '\
-		<div class="item" onclick="Overlay(\''+obj[i].IDpre+'\',\''+NAME+'\',\''+obj[i].CAT+'\',\''+obj[i].DAYS+'\',\''+obj[i].NIGHTS+'\',\''+obj[i].TOTALADMITTED+'\',\''+obj[i].TOTALREGISTERED+'\',\''+obj[i].NOTE+'\')">\
+		<div class="item" onclick="Overlay(\''+obj[i].IDpre+'\',\''+obj[i].FNAME+'\',\''+obj[i].LNAME+'\',\''+obj[i].CAT+'\',\''+obj[i].DAYS+'\',\''+obj[i].NIGHTS+'\',\''+obj[i].TOTALADMITTED+'\',\''+obj[i].TOTALREGISTERED+'\',\''+obj[i].RV+'\',\''+obj[i].NOTE+'\')">\
 			<div class="left">\
 				<div class="top">\
-					<div class="name">'+NAME+'</div>\
+					<div class="name">'+obj[i].FNAME+' '+obj[i].LNAME+'</div>\
 					<div class="days">'+obj[i].DAYS+'</div>\
 				</div>\
 				<div class="bottom">\

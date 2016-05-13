@@ -15,17 +15,32 @@
 #top .overlayText{
 	margin-top:0.5vh;
 }
+#ovNameF, #ovNameL{
+	float:left;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	width:45%;
+}
+#ovNameF{
+	text-align: right;
+}
+#ovNameL{
+	text-align: left;
+}
+#ovNameFText, #ovNameLText{
+	width:100%;
+}
 #top #left{
 	float:left;
 	height:100%;
 	text-align: right;
-	width:40%;
+	width:30%;
 }
 #top #center{
 	float:left;
 	height:100%;
 	text-align: center;
-	width:40%;
+	width:50%;
 }
 #top #right{
 	float:left;
@@ -68,7 +83,7 @@
 	height:60%;
 	width:100%;
 }
-#buttons #note{
+#buttons #ovNote{
 	border:1px solid white;
 	height:75%;
 	margin:5px;
@@ -100,13 +115,18 @@
 	text-align:center;
 	width:35%;
 }
-#buttons #editNote{
+#buttons #ovNoteEdit{
 	height: 4vh;
 	width:100%;
 }
-#buttons #editNote input{
+#buttons #ovNoteEdit input{
 	margin-left:35%;
 	width: 30%;
+}
+#ovNoteText{
+	height:95%;
+	text-align: left;
+	width:95%;
 }
 
 
