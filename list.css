@@ -1,0 +1,62 @@
+#header{
+	background:red;
+	height:5vh;
+	width:100vw;
+}
+#scroll{
+	height:95vh;
+	overflow-y:auto;
+	position:absolute;
+	top:5vh;
+	width:100vw;
+}
+.item{
+	border-bottom:1px solid white;
+	color:white;
+	font-size: 5vw;
+	overflow: hidden;
+	text-align: center;
+}
+.item .left{
+	float:left;
+	margin-top: .2vh;
+	margin-bottom: .2vh;
+	width:60%;
+}
+.item .left .top .name{
+	float:left;
+	width: 70%
+}
+.item .left .top .days{
+	float:right;
+	width:30%;
+}
+.item .left .bottom{
+	clear: both;
+}
+.item .left .bottom .cat{
+	float: left;
+	width: 65%;
+}
+.item .left .bottom .rvcamp{
+	float:right;
+	width: 35%;
+}
+
+.item .right{
+	float:right;
+	margin-top: .2vh;
+	margin-bottom: .2vh;
+	width:40%;
+}
+.item .right .left{
+	width:50%;
+}
+.item .right .left .top{
+	border-bottom: 1px solid white;
+	margin:auto;
+	width:40%;
+}
+.item .right .right{
+	width:50%;
+}

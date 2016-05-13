@@ -1,0 +1,116 @@
+#overlay{
+	background: black;
+	color:white;
+	font-size: 6vw;
+	height:100vh;
+	position: absolute;
+	width:100vw;
+	z-index: 10;
+}
+#top{
+	height:25%;
+	margin-top:10vh;
+	width:100%;
+}
+#top .overlayText{
+	margin-top:0.5vh;
+}
+#top #left{
+	float:left;
+	height:100%;
+	text-align: right;
+	width:40%;
+}
+#top #center{
+	float:left;
+	height:100%;
+	text-align: center;
+	width:40%;
+}
+#top #right{
+	float:left;
+	height:100%;
+	text-align: center;
+	width:20%;
+}
+#bottom{
+	height:65%;
+	overflow: hidden;
+	width:100%;
+}
+#bottom #left{
+	float:left;
+	text-align: center;
+	width:50%;
+}
+#bottom #right{
+
+	float:right;
+	margin-right:10%;
+	width:40%;
+}
+
+.minus, .number, .plus{
+	float:left;
+	font-size: 7vw;
+	font-weight: bold;
+	text-align: center;
+	width:33%;
+}
+.plus{
+	background: green;
+}
+.minus{
+	background: red;
+}
+#buttons{
+	clear:both;
+	height:60%;
+	width:100%;
+}
+#buttons #note{
+	border:1px solid white;
+	height:75%;
+	margin:5px;
+	margin-top:14vh;
+	margin-bottom:1.5vh;
+	overflow-y:auto;
+	padding:5px
+}
+#buttons #cancel{
+	background:red;
+	border:1px solid white;
+	float:left;
+	font-size:4vh;
+	height:4vh;
+	margin-left:10%;
+	margin-top:4%;
+	text-align:center;
+	width:35%;
+}
+#buttons #submit{
+	background:green;
+	color:white;
+	border:1px solid white;
+	float:left;
+	font-size:4vh;
+	height:4vh;
+	margin-left:10%;
+	margin-top:4%;
+	text-align:center;
+	width:35%;
+}
+#buttons #editNote{
+	height: 4vh;
+	width:100%;
+}
+#buttons #editNote input{
+	margin-left:35%;
+	width: 30%;
+}
+
+
+
+
+
+
