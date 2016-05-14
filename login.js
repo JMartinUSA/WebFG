@@ -1,4 +1,5 @@
 // document.getElementById('submit').addEventListener("click", submit);
+var loggedIn = false;
 
 function submit(){
 	var username = document.getElementById('username').value;
@@ -24,6 +25,7 @@ function isLogin(isAccount){
 		alert('We couldn\'t find any account with this Username and Password. Please try again.');
 	}else if(isAccount == 1){
 		onLogin();
+		loggedIn = true;
 	}else{
 		alert('error on isAccount.. isAccount=='+isAccount);
 	}

@@ -68,3 +68,46 @@ function Overlay(ID,FNAME,LNAME,CAT,DAYS,NIGHTS,ADMITTED,TOTAL,RV,NOTE){
 				</div>\
 			</div>'
 }
+function addRegister(){
+	document.getElementById('container').innerHTML = '<link rel="stylesheet" href="addRegister.css" />\
+		<div id="addRegister">\
+			<div id="addNameWrapper">\
+				<div id="addFNameSpacer">Firstname</div>\
+				<div id="addLNameSpacer">Lastname</div>\
+				<div id="addName">\
+					<input type="text" id="addFNameText" />\
+					<input type="text" id="addLNameText" />\
+				</div>\
+			</div>\
+			<div id="addCatWrapper">\
+				<div id="addCatSpacer">Category:&nbsp</div><div id="addCat"><input type="text" id="addCatText"></div>\
+			</div>\
+			<div id="addDaysSpacer">Days</div>\
+			<div id="addDays">\
+				<div id="addFri"><div class="floatButton" onclick="toggleThis(this);" title="false">Fri</div></div>\
+				<div id="addSat"><div class="floatButton" onclick="toggleThis(this);" title="false">Sat</div></div>\
+				<div id="addSun"><div class="floatButton" onclick="toggleThis(this);" title="false">Sun</div></div>\
+			</div>\
+			<div id="addNightsSpacer">Nights</div><div id="addRVSpacer">RV</div>\
+			<div id="addNights">\
+				<div id="addFriNight"><div class="floatButton" onclick="toggleThis(this);" title="false">Fri</div></div>\
+				<div id="addSatNight"><div class="floatButton" onclick="toggleThis(this);" title="false">Sat</div></div>\
+				<div id="addRVWrapper"><div class="floatButton"><input type="checkbox" id="addRV"></div></div>\
+			</div>\
+			<div id="addAmount">\
+				<div id="addAmountMinus" onclick="amountMinus();">-</div>\
+				<div id="addAmountNumber">1</div>\
+				<div id="addAmountPlus" onclick="amountPlus();">+</div>\
+			</div>\
+			<div id="addNote">\
+				<div id="addNoteText"></div>\
+			</div>\
+			<div id="addNoteButtonWrapper">\
+				<input type="button" id="addNoteButton" value="Edit Note" onclick="editNote();">\
+			</div>\
+			<div id="addButtonWrapper">\
+				<div id="addCancel" onclick="addCancel();">Cancel</div>\
+				<div id="addSubmit" onclick="addSubmit();">Submit</div>\
+			</div>\
+		</div>';
+}
