@@ -6,8 +6,8 @@
 	width:100%;
 }
 #addNameWrapper{
-	height:10%;
-	margin-top:2vh;
+	height:9%;
+	margin-top:5vh;
 	width:100%;
 }
 #addFNameSpacer, #addLNameSpacer{
@@ -42,7 +42,7 @@
 #addDaysSpacer{
 	/*font-size: 4vh;*/
 	height:3%;
-	margin-top: 5vh;
+	margin-top: 3vh;
 	width:100%;
 }
 #addDays, #addNights{
@@ -124,7 +124,7 @@
 }
 #addButtonWrapper{
 	height:13%;
-	margin-top:5vh;
+	margin-top:2vh;
 	width:100%;
 }
 #addCancel{

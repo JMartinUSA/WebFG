@@ -7,8 +7,8 @@
 	width:75%;
 	height:5vh;
 	margin-left:12.5%;
+	margin-top:5vh;
 	position: absolute;
-	top:3vh;
 }
 #headerWrapper button{
 	width:25%;
@@ -17,8 +17,9 @@
 	width:50%;
 }
 #scroll{
-	height:90vh;
+	height:82vh;
 	overflow-y:auto;
+	padding-bottom: 8vh;
 	position:absolute;
 	top:10vh;
 	width:100vw;
