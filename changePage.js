@@ -15,7 +15,7 @@ function List(){
 			</div>';
 			pullList();
 }
-function Overlay(ID,FNAME,LNAME,CAT,DAYS,NIGHTS,ADMITTED,TOTAL,RV,NOTE){
+function Overlay(ID,FNAME,LNAME,CAT,DAYS,NIGHTS,ADMITTED,TOTAL,RV,NOTE,NIGHTRV){
 	assignValues(ID,FNAME,LNAME,CAT,DAYS,NIGHTS,ADMITTED,TOTAL,RV,NOTE);
 	document.getElementById('overlayCont').innerHTML = '<link rel="stylesheet" href="overlay.css">\
 			<div id="overlay">\
@@ -30,7 +30,7 @@ function Overlay(ID,FNAME,LNAME,CAT,DAYS,NIGHTS,ADMITTED,TOTAL,RV,NOTE){
 						<div class="overlayText" id="ovName"><div id="ovNameF">'+FNAME+'</div><div id="ovNameL">'+LNAME+'</div></div>\
 						<div class="overlayText" id="ovCat">'+CAT+'</div>\
 						<div class="overlayText" id="ovDays">'+DAYS+'</div>\
-						<div class="overlayText" id="ovNights">'+NIGHTS+'</div>\
+						<div class="overlayText" id="ovNights">'+NIGHTRV+'</div>\
 					</div>\
 					<div id="right">\
 						<div class="overlayText" id="ovNameEdit"><input type="button" id="ovNameEditButton" value="EDIT" onclick="edit(\'ovName\');"></div>\
@@ -84,14 +84,14 @@ function addRegister(){
 			</div>\
 			<div id="addDaysSpacer">Days</div>\
 			<div id="addDays">\
-				<div id="addFri"><div class="floatButton" onclick="toggleThis(this);" title="false">Fri</div></div>\
-				<div id="addSat"><div class="floatButton" onclick="toggleThis(this);" title="false">Sat</div></div>\
-				<div id="addSun"><div class="floatButton" onclick="toggleThis(this);" title="false">Sun</div></div>\
+				<div id="addFri"><div id="addFriBut" class="floatButton" onclick="toggleThis(this);" title="false">Fri</div></div>\
+				<div id="addSat"><div id="addSatBut" class="floatButton" onclick="toggleThis(this);" title="false">Sat</div></div>\
+				<div id="addSun"><div id="addSunBut" class="floatButton" onclick="toggleThis(this);" title="false">Sun</div></div>\
 			</div>\
 			<div id="addNightsSpacer">Nights</div><div id="addRVSpacer">RV</div>\
 			<div id="addNights">\
-				<div id="addFriNight"><div class="floatButton" onclick="toggleThis(this);" title="false">Fri</div></div>\
-				<div id="addSatNight"><div class="floatButton" onclick="toggleThis(this);" title="false">Sat</div></div>\
+				<div id="addFriNight"><div id="addFriNightBut" class="floatButton" onclick="toggleThis(this);" title="false">Fri</div></div>\
+				<div id="addSatNight"><div id="addSatNightBut" class="floatButton" onclick="toggleThis(this);" title="false">Sat</div></div>\
 				<div id="addRVWrapper"><div class="floatButton"><input type="checkbox" id="addRV"></div></div>\
 			</div>\
 			<div id="addAmount">\

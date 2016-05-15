@@ -52,7 +52,7 @@ function toPHP(fromPHP){
 		}
 
 		document.getElementById('scroll').innerHTML += '\
-		<div class="item" onclick="Overlay(\''+obj[i].IDpre+'\',\''+obj[i].FNAME+'\',\''+obj[i].LNAME+'\',\''+obj[i].CAT+'\',\''+obj[i].DAYS+'\',\''+obj[i].NIGHTS+'\',\''+obj[i].TOTALADMITTED+'\',\''+obj[i].TOTALREGISTERED+'\',\''+obj[i].RV+'\',\''+obj[i].NOTE+'\')">\
+		<div class="item" onclick="Overlay(\''+obj[i].IDpre+'\',\''+obj[i].FNAME+'\',\''+obj[i].LNAME+'\',\''+obj[i].CAT+'\',\''+obj[i].DAYS+'\',\''+obj[i].NIGHTS+'\',\''+obj[i].TOTALADMITTED+'\',\''+obj[i].TOTALREGISTERED+'\',\''+obj[i].RV+'\',\''+obj[i].NOTE+'\',\''+NIGHTS+'\')">\
 			<div class="left">\
 				<div class="top">\
 					<div class="name">'+obj[i].FNAME+' '+obj[i].LNAME+'</div>\
@@ -60,7 +60,7 @@ function toPHP(fromPHP){
 				</div>\
 				<div class="bottom">\
 					<div class="cat">'+obj[i].CAT+'</div>\
-					<div class="rvCamp">'+obj[i].NIGHTS+'</div>\
+					<div class="rvCamp">'+NIGHTS+'</div>\
 				</div>\
 			</div>\
 			<div class="right">\
