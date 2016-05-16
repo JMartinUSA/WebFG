@@ -73,9 +73,11 @@ function submitChanges(){
 
 //plus minus
 function admittedMinus(){
-	document.getElementById('numAdmitted').innerHTML = (Number(document.getElementById('numAdmitted').innerHTML)-1);
-	ovValues.ADMITTED = Number(document.getElementById('numAdmitted').innerHTML);
-	console.log(ovValues.ADMITTED);
+	if( document.getElementById('numAdmitted').innerHTML > 0 ){
+		document.getElementById('numAdmitted').innerHTML = (Number(document.getElementById('numAdmitted').innerHTML)-1);
+		ovValues.ADMITTED = Number(document.getElementById('numAdmitted').innerHTML);
+		console.log(ovValues.ADMITTED);
+	}
 }
 function admittedPlus(){
 	document.getElementById('numAdmitted').innerHTML = (Number(document.getElementById('numAdmitted').innerHTML)+1);
@@ -83,9 +85,11 @@ function admittedPlus(){
 	console.log(ovValues.ADMITTED);
 }
 function totalMinus(){
-	document.getElementById('numTotal').innerHTML = (Number(document.getElementById('numTotal').innerHTML)-1);
-	ovValues.TOTAL = Number(document.getElementById('numTotal').innerHTML);
-	console.log(ovValues.TOTAL);
+	if( document.getElementById('numTotal').innerHTML > 1){
+		document.getElementById('numTotal').innerHTML = (Number(document.getElementById('numTotal').innerHTML)-1);
+		ovValues.TOTAL = Number(document.getElementById('numTotal').innerHTML);
+		console.log(ovValues.TOTAL);
+	}
 }
 function totalPlus(){
 	document.getElementById('numTotal').innerHTML = (Number(document.getElementById('numTotal').innerHTML)+1);

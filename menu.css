@@ -24,7 +24,7 @@
 	top:0px;
 	z-index: 12;
 }
-#menuTop, #menuMiddle, #menuBottom{
+#menuTop, #menuTopMid, #menuMiddle, #menuBottom{
 	color:rgba(255,255,255,0.7);
 	border:1px solid rgba(255,255,255,0.7);
 	border-radius: 2px;
@@ -38,11 +38,14 @@
 	width:50vw;
 }
 #menuTop{
-	top:20vh;
+	top:15vh;
+}
+#menuTopMid{
+	top:35vh;
 }
 #menuMiddle{
-	top:45vh;
+	top:55vh;
 }
 #menuBottom{
-	top:70vh;
+	top:75vh;
 }

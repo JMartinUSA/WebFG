@@ -1,5 +1,7 @@
 function amountMinus(){
-	document.getElementById('addAmountNumber').innerHTML = (Number(document.getElementById('addAmountNumber').innerHTML))-1;
+	if( document.getElementById('addAmountNumber').innerHTML > 1){
+		document.getElementById('addAmountNumber').innerHTML = (Number(document.getElementById('addAmountNumber').innerHTML))-1;
+	}
 }
 function amountPlus(){
 	document.getElementById('addAmountNumber').innerHTML = (Number(document.getElementById('addAmountNumber').innerHTML))+1;
@@ -26,7 +28,7 @@ function addCancel(){
 	List();
 }
 function addSubmit(){
-	var errorMessage = []
+	var errorMessage = [];
 
 	//getting days
 	var addDays = '';

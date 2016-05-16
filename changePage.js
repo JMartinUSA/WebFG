@@ -111,3 +111,36 @@ function addRegister(){
 			</div>\
 		</div>';
 }
+function POS(){
+	document.getElementById('container').innerHTML = '<link rel="stylesheet" href="POS.css" />\
+		<div id="POS">\
+			<div id="daysSpacer">Days</div>\
+			<div id="days">\
+				<div id="addFri"><div id="addFriBut" class="floatButton" onclick="toggleThis(this);calcChange();" title="false">Fri</div></div>\
+				<div id="addSat"><div id="addSatBut" class="floatButton" onclick="toggleThis(this);calcChange();" title="false">Sat</div></div>\
+				<div id="addSun"><div id="addSunBut" class="floatButton" onclick="toggleThis(this);calcChange();" title="false">Sun</div></div>\
+			</div>\
+			<div id="nightsSpacer">Nights</div>\
+			<div id="nights">\
+				<div id="addFriNight"><div id="addFriNightBut" class="floatButton" onclick="toggleThis(this);calcChange();" title="false">Fri</div></div>\
+				<div id="addSatNight"><div id="addSatNightBut" class="floatButton" onclick="toggleThis(this);calcChange();" title="false">Sat</div></div>\
+			</div>\
+			<div id="amountSpacer">Amount of people</div>\
+			<div id="addAmount">\
+				<div id="addAmountMinus" onclick="amountMinus();calcChange();">-</div>\
+				<div id="addAmountNumber">1</div>\
+				<div id="addAmountPlus" onclick="amountPlus();calcChange();">+</div>\
+			</div>\
+			<div id="addNote">\
+				<div id="addNoteText"></div>\
+			</div>\
+			<div id="addNoteButtonWrapper">\
+				<input type="button" id="addNoteButton" value="Edit Note" onclick="editNote();">\
+			</div>\
+			<div id="totalDue">Total = $0</div>\
+			<div id="addButtonWrapper">\
+				<div id="addCancel" onclick="POSCancel();">Cancel</div>\
+				<div id="addSubmit" onclick="POSSubmit();">Submit</div>\
+			</div>\
+		</div>';
+}
