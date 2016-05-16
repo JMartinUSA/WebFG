@@ -1,3 +1,4 @@
+alert('pos.js loaded');
 var totalAmountPOS,
 	ammountOfPeople;
 function calcChange(){
