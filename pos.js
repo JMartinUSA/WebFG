@@ -60,19 +60,19 @@ function POSSubmit(){
 		NOTE = document.getElementById('addNoteText').innerHTML;
 
 		if( document.getElementById('addFriBut').title == 'true'){
-			FRIDAY = 1;
+			FRIDAY = AMOUNT;
 		}
 		if( document.getElementById('addSatBut').title == 'true'){
-			SATURDAY = 1;
+			SATURDAY = AMOUNT;
 		}
 		if( document.getElementById('addSunBut').title == 'true'){
-			SUNDAY = 1;
+			SUNDAY = AMOUNT;
 		}
 		if( document.getElementById('addFriNightBut').title == 'true'){
-			FRINIGHT = 1;
+			FRINIGHT = AMOUNT;
 		}
 		if( document.getElementById('addSatNightBut').title == 'true'){
-			SATNIGHT = 1;
+			SATNIGHT = AMOUNT;
 		}
 		console.log('fri'+FRIDAY);
 		if( (FRIDAY+SATURDAY+SUNDAY) > 0){
