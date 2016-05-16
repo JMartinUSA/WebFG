@@ -31,8 +31,11 @@ function calcChange(){
 function POSSubmit(){
 	var errorMessage = [];
 	var d = new Date(),
-		DATE = (d.getMonth())+'-'+(d.getDate())+'-'+(d.getFullYear()),
-		TIME = (d.getHours())+':'+(d.getMinutes())+':'+(d.getSeconds()),
+		DATE = (d.getMonth())+1+'-'+(d.getDate())+'-'+(d.getFullYear()),
+		TIME,
+		HOURS = (d.getHours()),
+		MINUTES = (d.getMinutes()),
+		SECONDS = (d.getSeconds()),
 		NAME = 'Jesse',
 		AMOUNT = ammountOfPeople,
 		FRIDAY = 0,
@@ -43,6 +46,13 @@ function POSSubmit(){
 		NOTE = '',
 		TOTAL = totalAmountPOS;
 		console.log(TOTAL);
+		if(MINUTES < 10){
+			MINUTES = '0'+MINUTES;
+		}
+		if(SECONDS < 10){
+			SECONDS = '0'+SECONDS;
+		}
+		TIME = HOURS+':'+MINUTES+':'+SECONDS;
 
 		if(document.getElementById('addNoteButtonWrapper').innerHTML == '<input type="button" id="addNoteButton" value="Save Note" onclick="saveNote();">'){
 			saveNote();
@@ -84,7 +94,7 @@ function POSSubmit(){
 			}
 		};
 		//console.log("http://jaymartmedia.com/webfg/insert.php?ID="+added.ID+"&FNAME="+added.FNAME+"&LNAME="+added.LNAME+"&CAT="+added.CAT+"&DAYS="+added.DAYS+"&NIGHTS="+added.NIGHTS+"&ADMITTED="+added.ADMITTED+"&TOTAL="+added.TOTAL+"&RV="+added.RV+"&NOTE="+ovValues.NOTE);
-		xhttp.open("POST", "http://jaymartmedia.com/webfg/pos.php?DATE="+DATE+"&TIME="+TIME+"&NAME="+NAME+"&AMOUNT="+AMOUNT+"&FRIDAY="+FRIDAY+"&SATURDAY="+SATURDAY+"&SUNDAY="+SUNDAY+"&FRINIGHT="+FRINIGHT+"&SATNIGHT="+SATNIGHT+"&NOTE="+NOTE+"&TOTAL="+TOTAL, true);
+		xhttp.open("POST", "http://jaymartmedia.com/webfg/pos.php?DATE="+DATE+"&HOURS="+HOURS+"&MINUTES="+MINUTES+"&SECONDS="+SECONDS+"&NAME="+NAME+"&AMOUNT="+AMOUNT+"&FRIDAY="+FRIDAY+"&SATURDAY="+SATURDAY+"&SUNDAY="+SUNDAY+"&FRINIGHT="+FRINIGHT+"&SATNIGHT="+SATNIGHT+"&NOTE="+NOTE+"&TOTAL="+TOTAL, true);
 		xhttp.send();
 		POS();
 	}

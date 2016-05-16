@@ -1,3 +1,19 @@
+function onStartUp(){
+	Login()
+	
+	document.getElementById('overlayCont').innerHTML = '<link rel="stylesheet" href="welcome.css">\
+		<div id="welcome">\
+			<div id="firstLine">Welcome to</div>\
+			<div id="secondLine">WebFG</div>\
+			<div id="thirdLine">Powered by<div id="dot1">.</div><div id="dot2">.</div><div id="dot3">.</div></div>\
+			<div id="fourthLine">JayMartMedia.com</div>\
+		</div>';
+
+		setInterval(animationEnd, 8500);
+		function animationEnd(){
+			document.getElementById('overlayCont').innerHTML = '';
+		}
+}
 function Login(){
 	document.getElementById('container').innerHTML = '<div id="loginPanel">\
 				<div id="inputArea">\

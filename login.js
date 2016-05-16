@@ -1,6 +1,7 @@
 // document.getElementById('submit').addEventListener("click", submit);
 var loggedIn = false;
 
+
 function submit(){
 	var username = document.getElementById('username').value;
 	var password = document.getElementById('password').value;
