@@ -26,6 +26,7 @@ function calcChange(){
 		}
 		totalAmountPOS = perPerson*ammountOfPeople;
 		document.getElementById('totalDue').innerHTML = 'Total = $'+totalAmountPOS;
+		alert(totalAmountPOS);
 }
 
 function POSSubmit(){
