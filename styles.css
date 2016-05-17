@@ -4,35 +4,35 @@ body{
 }
 #container{
 	background: black;
-	height:100vh;
+	
 	overflow: hidden;
-	width:100vw;
+	
 }
 #loginPanel{
 	border:2px solid white;
 	border-radius: 4px;
-	left:15vw;
+	
 	position:absolute;
-	top:30vh;
-	width:70vw;
+
+
 }
 #inputArea{
 	color:white;
-	font-size: 3.5vh;
+	
 	text-align: center;
 }
 #username, #password, #submit{
 	color:black;
-	font-size: 3.5vh;
-	height:4vh;
+	
+	
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0px;
-	margin-bottom:1.5vh;
+	
 	max-width: 90%;
 	text-align: center;
 }
 #submit{
-	height:4.5vh;
+	
 	width:70%;
 }
