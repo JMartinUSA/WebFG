@@ -2,13 +2,13 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.jaymartmedia.webfg"
-        versionCode = "10" 
-        version     = "1.0.0" >
+        versionCode = "11" 
+        version     = "1.1.0" >
         
     <name>WebFG</name>
     
     <description>
-      A cool, simple, way to keep track of people.
+      A cool, simple, way to keep track of registration.
     </description>
     
     
