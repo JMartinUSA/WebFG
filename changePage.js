@@ -1,18 +1,11 @@
 function onStartUp(){
-	Login()
-	
-	// document.getElementById('overlayCont').innerHTML = '<link rel="stylesheet" href="welcome.css">\
-	// 	<div id="welcome">\
-	// 		<div id="firstLine">Welcome to</div>\
-	// 		<div id="secondLine">WebFG</div>\
-	// 		<div id="thirdLine">Powered by<div id="dot1">.</div><div id="dot2">.</div><div id="dot3">.</div></div>\
-	// 		<div id="fourthLine">JayMartMedia.com</div>\
-	// 	</div>';
+	sizeWelcome();
+	Login();
 
-		setTimeout(animationEnd, 8500);
-		function animationEnd(){
-			document.getElementById('overlayCont').innerHTML = '';
-		}
+	setTimeout(animationEnd, 8200);
+	function animationEnd(){
+		document.getElementById('overlayCont').innerHTML = '';
+	}
 }
 function Login(){
 	document.getElementById('container').innerHTML = '<div id="loginPanel">\
@@ -23,6 +16,7 @@ function Login(){
 					<input type="button" id="submit" value="login" onclick="submit();" />\
 				</div>\
 			</div>';
+			sizeLogin();
 }
 function List(){
 	document.getElementById('container').innerHTML = '\
@@ -30,6 +24,7 @@ function List(){
 			<div id="scroll"\
 			</div>';
 			pullList();
+			sizeList();
 }
 function Overlay(ID,FNAME,LNAME,CAT,DAYS,NIGHTS,ADMITTED,TOTAL,RV,NOTE,NIGHTRV){
 	assignValues(ID,FNAME,LNAME,CAT,DAYS,NIGHTS,ADMITTED,TOTAL,RV,NOTE);
@@ -83,6 +78,7 @@ function Overlay(ID,FNAME,LNAME,CAT,DAYS,NIGHTS,ADMITTED,TOTAL,RV,NOTE,NIGHTRV){
 					</div>\
 				</div>\
 			</div>'
+	sizeOverlay();
 }
 function addRegister(){
 	document.getElementById('container').innerHTML = '<link rel="stylesheet" href="addRegister.css" />\
@@ -126,6 +122,7 @@ function addRegister(){
 				<div id="addSubmit" onclick="addSubmit();">Submit</div>\
 			</div>\
 		</div>';
+		sizeRegister();
 }
 function POS(){
 	document.getElementById('container').innerHTML = '<link rel="stylesheet" href="POS.css" />\
@@ -159,4 +156,5 @@ function POS(){
 				<div id="addSubmit" onclick="POSSubmit();">Submit</div>\
 			</div>\
 		</div>';
+		sizePOS();
 }
