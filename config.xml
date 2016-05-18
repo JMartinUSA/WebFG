@@ -11,6 +11,7 @@
       A cool, simple, way to keep track of registration.
     </description>
     
+    <gap:plugin name=cordova-plugin-whitelist source=npm>
     
     <preference name="permissions" value="none"/>
     <preference name="orientation" value="portrait" />
