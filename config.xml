@@ -16,5 +16,6 @@
     <preference name="fullscreen" value="true" />
     <icon src="icon.png" />
 
-    <access origin="http://jaymartmedia.com" subdomains="true" />
+    <plugin name="cordova-plugin-whitelist" />
+    <allow-navigation href="*" />
     </widget>
