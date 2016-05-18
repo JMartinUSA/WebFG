@@ -32,8 +32,20 @@
 	text-align: center;
 	background: rgba(0,0,0,.9);
 	z-index: 22;
-	
-	margin-left:25%;
-	
-	
+	font-size:6vh;
+	margin-left:25vw;
+	height:7.5vh;
+	width:50vw;
+}
+#menuTop{
+	top:15vh;
+}
+#menuTopMid{
+	top:35vh;
+}
+#menuMiddle{
+	top:55vh;
+}
+#menuBottom{
+	top:75vh;
 }

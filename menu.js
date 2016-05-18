@@ -7,7 +7,6 @@ function Menu(){
 			<div id="menuMiddle" onclick="menuSell()">Sell</div>\
 			<div id="menuBottom" onclick="menuLogout()">Logout</div>\
 		</div>';
-		sizeMenu();
 }
 function menuList(){
 	console.log('list');

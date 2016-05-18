@@ -17,7 +17,7 @@ function checkPassword(username, password){
 			isLogin(isAccount);
 		}
 	};
-	xhttp.open("GET", "http://jaymartmedia.com/webfg/login.php?USERNAME="+username+"&PASSWORD="+password, true);
+	xhttp.open("POST", "http://jaymartmedia.com/webfg/login.php?USERNAME="+username+"&PASSWORD="+password, true);
 	xhttp.send();
 }
 

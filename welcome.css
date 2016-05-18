@@ -1,8 +1,8 @@
 #welcome{
 	background: black;
 	color: white;
-	
-	
+	font-size: 5vh;
+	height:100vh;
 	overflow: hidden;
 	position: absolute;
 	text-align: center;
@@ -15,21 +15,21 @@
 }
 #firstLine{
 	position:relative;
-	
+	top:27vh;
 
 	animation-name:firstLine;
 	animation-duration:2s;
 }
 #secondLine{
 	position:relative;
-	
+	top:30vh;
 
 	animation-name:secondLine;
 	animation-duration:2s;
 }
 #thirdLine{
 	position:relative;
-	
+	top:33vh;
 
 	animation-name:thirdLine;
 	animation-duration:2.5s;
@@ -54,7 +54,7 @@
 }
 #fourthLine{
 	position:relative;
-	
+	top:36vh;
 
 	animation-name:fourthLine;
 	animation-duration:6.5s;
